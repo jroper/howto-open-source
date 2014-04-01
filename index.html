@@ -1,0 +1,146 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Open source for fun and profit - mostly fun</title>
+    <meta name="description" content="A presentation about how to get involved in Open Source software development" />
+    <meta name="author" content="James Roper" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/main.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <script src="prettify/run_prettify.js"></script>
+</head>
+
+<body class="impress-not-supported">
+
+<div class="blackOut"></div>
+
+<div id="impress">
+
+    <div id="title" class="step slide" data-x="0" data-y="0">
+      <h1>Open source for fun and profit</h1>
+      <div class="subtitle">... mostly fun.</div>
+      <div class="me">James Roper</div>
+      <div class="twitter">@jroper</div>
+      <div class="typesafe"><img src="images/typesafe.png"/></div>
+    </div>
+
+    <div id="whoami" class="step slide" data-x="0" data-y="1000">
+        <h2>Who am I?</h2>
+        <img src="images/james.jpg" style="max-height: 70%"/>
+    </div>
+
+    <div id="agenda" class="step slide" data-x="0" data-y="2000">
+        <h2>Agenda</h2>
+        <ol>
+            <li>Contribute to open source</li>
+            <li>???</li>
+            <li>Profit!</li>
+        </ol>
+    </div>
+
+    <div id="why" class="step slide" data-x="1500" data-y="2000" data-rotate="-90">
+        <q>Why open source?</q>
+    </div>
+
+    <div id="fun" class="step slide" data-x="2500" data-y="2000" data-rotate="-90">
+        <q>1. it is fun</q>
+        <img src="images/energy-dog.jpg"/>
+    </div>
+
+    <div id="innovate" class="step slide" data-x="3500" data-y="2000" data-rotate="-90">
+        <q>2. to learn/innovate</q>
+        <img src="images/innovation.jpg" style="max-height: 50%"/>
+    </div>
+    
+    <div id="career" class="step slide" data-x="4500" data-y="2000" data-rotate="-90">
+        <q>3. career</q>
+        <img src="images/career.jpg"/>
+    </div>
+
+    <div id="better-user" class="step" data-x="3000" data-y="3000" data-scale="4">
+        <q>4. to be a better open source user</q>
+    </div>
+
+    <div id="where-to-start" class="step slide" data-x="-1000" data-y="3000" data-rotate="90">
+        <q>Where to start?</q>
+    </div>
+
+    <div id="github" class="step slide" data-x="-2000" data-y="3000" data-rotate="90">
+        <img src="images/octocat.png" style="max-height: 80%"/>
+    </div>
+    
+    <div id="choose" class="step slide" data-x="-3000" data-y="3000" data-rotate="90">
+        <q>a project you love</q>
+        <q>... or is welcoming to newcomers</q>
+    </div>
+    
+    <div id="read" class="step slide" data-x="-4000" data-y="3000" data-rotate="90">
+        <q>read the projects get involved page</q>
+    </div>
+    
+    <div id="subscribe" class="step slide" data-x="-5000" data-y="3000" data-rotate="90">
+        <q>subscribe to the projects mailing list</q>
+    </div>
+    
+    <div id="triage" class="step slide" data-x="-6000" data-y="3000" data-rotate="90">
+        <q>triage bugs</q>
+    </div>
+
+    <div id="hack" class="step slide" data-x="-4500" data-y="1500" data-rotate="180" data-scale="2">
+        <img src="images/hack.jpg"/>
+    </div>
+    
+    <div id="guide" class="step slide" data-x="-4500" data-y="0" data-rotate="180">
+        <q>read contributor guide</q>
+        <img src="images/read.jpg" style="max-height: 55%;"/>
+    </div>
+    
+    <div id="setup" class="step slide" data-x="-4500" data-y="-1000" data-rotate="180">
+        <q>setup dev environment</q>
+        <img src="images/trinity.jpg" style="max-height: 55%;"/>
+    </div>
+    
+    <div id="changes" class="step slide" data-x="-4500" data-y="-2000" data-rotate="180">
+        <q>hack</q>
+        <img src="images/hack.jpg" style="max-height: 55%;"/>
+    </div>
+    
+    <div id="submit-pr" class="step slide" data-x="-4500" data-y="-3000" data-rotate="180">
+        <q>submit a pull request</q>
+        <img src="images/request.jpg" style="max-height: 55%;"/>
+    </div>
+    
+    <div id="respond" class="step slide" data-x="-4500" data-y="-4000" data-rotate="180">
+        <q>respond to review</q>
+        <img src="images/review.jpg" style="max-height: 55%;"/>
+    </div>
+</div>
+
+<script src="js/impress.js"></script>
+<script>
+    document.addEventListener("keypress", function(event) {
+        if (event.keyCode == 120 /* x */) {
+            var blackOut = document.getElementsByClassName("blackOut")[0];
+            if (blackOut.style.display == "block") {
+                blackOut.style.display = "none";
+            } else {
+                blackOut.style.display = "block";
+            }
+        }
+        return true;
+    });
+
+    impress().init();
+</script>
+
+</body>
+</html>
+
